@@ -49,7 +49,7 @@ namespace DB_lab_project
         {
             if (Convert.ToBoolean(chb_agree.IsChecked))
             {
-                string diffBackupCmd = string.Format("USE master BACKUP DATABASE Amlaak TO DISK='{0}' WITH DIFFERENTIAL;", path);
+                string diffBackupCmd = string.Format("USE master BACKUP DATABASE DB_lab_project TO DISK='{0}' WITH DIFFERENTIAL;", path);
                 try
                 {
                     SqlCommand cmd = new SqlCommand(diffBackupCmd, conn);

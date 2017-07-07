@@ -39,5 +39,15 @@ namespace DB_lab_project
         {
             mainFrame.Navigate(new DifferentialBackup(conn));
         }
+
+        private void mi_restoreBackup_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new RestoreBackup(conn));
+        }
+
+        private void mi_about_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new About());
+        }
     }
 }

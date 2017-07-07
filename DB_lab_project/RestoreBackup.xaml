@@ -9,6 +9,12 @@
       Title="RestoreBackup">
 
     <Grid FlowDirection="RightToLeft">
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="505" Height="69"><Run FlowDirection="RightToLeft" Text="برای بازگرداندن داده های برنامه از نسخه پشتیبان می بایست فایل با پسوند "/><Span><Run Text="bak"/></Span><Run FlowDirection="RightToLeft" Text=" که پیش از این ایجاد کردید را انتخاب کنید و سپس دکمه بازنشانی پشتیبان را فشار دهد تا نسخه پشتیبان بارگذاری شود."/><Run FlowDirection="RightToLeft" Text=" فرایند بازگردانی ممکن است بسته به حجم داده ها چند ثانیه تا چند دقیقه متغیر باشد، لطفا تا پایان عملیات و نمایش پیغام موفقیت آ"/><Run FlowDirection="RightToLeft" Text="م"/><Run FlowDirection="RightToLeft" Text="یز بودن فرآیند شکیبا باشید."/><LineBreak/><Run FlowDirection="RightToLeft"/></TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="505" Foreground="Red"><Run FlowDirection="RightToLeft" Text="*!!* توجه داشته باشید با بازنشانی نسخه پشتیبان تمامی داده های فعلی شما در برنامه پاک شده و داده های برنامه در هنگام پشتیبان گیری جایگزین خواهد شد*!!*"/></TextBlock>
+        <Label x:Name="lbl_path" FlowDirection="LeftToRight" Content="" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="504"/>
+        <Button x:Name="btn_restoreBackup" Content="بازگردانی نسخه پشتیبان" HorizontalAlignment="Center" Margin="198,224,206.8,0" VerticalAlignment="Top" Width="120" Click="btn_restoreBackup_Click"/>
+        <CheckBox x:Name="chb_agree" Content="متن بالا را مطالعه کردم" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,228,0,0"/>
+        <Button x:Name="btn_loadFile" Content="بارگذاری فایل" HorizontalAlignment="Center" Margin="225,161,224.8,0" VerticalAlignment="Top" Width="75" Click="btn_loadFile_Click"/>
+
     </Grid>
 </Page>
