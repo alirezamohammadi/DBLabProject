@@ -1,0 +1,18 @@
+﻿<Page x:Class="DB_lab_project.FullBackup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DB_lab_project"
+      mc:Ignorable="d" 
+      d:DesignHeight="275" d:DesignWidth="525"
+      Title="FullBackup">
+
+    <Grid FlowDirection="RightToLeft">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Center" Width="505" Height="110" Margin="10,13,0,152.2"><Run FlowDirection="RightToLeft" Text="برای پشتیبان گیری از تمامی اطلاعات سامانه می بایست در ابتدا محل ذخیره سازی پرونده پشتیبان را از طریق کلید تعبیه شده انتخاب کنید و "/><Run FlowDirection="RightToLeft" Text="سپس کلید تهیه پشتیبان را فشار دهید و منتظر ایجاد فایل پشتیبان باشید."/><Run Text=" "/><LineBreak/><Run FlowDirection="RightToLeft" Text="توجه داشته باشید "/><Run FlowDirection="RightToLeft" Text="هنگام انتخاب محل ذخیره سازی فایل درایوی به غیر از آن که ویندوز بر روی آن  نصب شده است (معمولا درایو "/><Span><Run Text="C"/></Span><Span><Run FlowDirection="RightToLeft" Text=")"/></Span><Run FlowDirection="RightToLeft" Text=" را انتخاب کنید، زیرا برنامه دسترسی به درایو ویندوز را ندارد و به همین خاطر پیغام خطا دریافت می کنید."/></TextBlock>
+        <Button Content="محل ذخیره سازی" HorizontalAlignment="Center" VerticalAlignment="Center" Width="105" Click="button_Click"/>
+        <Label x:Name="lbl_path" FlowDirection="LeftToRight" Content="" HorizontalAlignment="Left" Margin="11,177,0,0" VerticalAlignment="Top" Width="503"/>
+        <Button x:Name="btn_createBackup" Content="ایجاد نسخه پشتیبان" HorizontalAlignment="Left" Margin="210,217,0,0" VerticalAlignment="Top" Width="104" Click="btn_createBackup_Click"/>
+
+    </Grid>
+</Page>

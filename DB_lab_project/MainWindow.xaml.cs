@@ -30,5 +30,9 @@ namespace DB_lab_project
             mainFrame.Navigate(new Login(conn,navMenu, mainFrame));
         }
 
+        private void mi_fullBackup_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new FullBackup(conn));
+        }
     }
 }
