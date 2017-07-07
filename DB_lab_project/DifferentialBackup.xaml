@@ -9,6 +9,11 @@
       Title="DifferentialBackup">
 
     <Grid FlowDirection="RightToLeft">
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="502" Height="143"><Run FlowDirection="RightToLeft" Text="برای استفاده از این نوع بکاپ گیری شما  می بایست پیش از این در قسمت &quot;"/><Run FlowDirection="RightToLeft" Text="تهیه نسخه پشتیبان از کل داده ها&quot; نسخه پشتیبان تهیه کرده باشید و در این قسمت تغییرات جدید در دیتابیس از جمله داده های جدید، تغییرات، حذف ها و ... را در فایل پشتیبان قبلی خود لحاظ کنید."/><LineBreak/><Run FlowDirection="RightToLeft" Text="این عملیات ممکن است تا چند دقیقه به طول بینجامد، لطفا تا پایان عملیات و نمایش پیغام موفقیت آمیز بودن پشتیبان  گیری شکیبا باشید."/><LineBreak/><Run FlowDirection="RightToLeft" Text="توجه داشته باشید در این نوع پشتیبان گیری تمامی داده های فعلی برنامه جایگزین داده های فایل پشتیبان قبلی خواهند شد و تفاوت آن با تهیه پشتیبان از کل داده ها این است که در صورتی که حجم داده ها زیاد باشند، سرعت تهیه پشتیبان سریع تر خواهد بود"/><Run FlowDirection="RightToLeft" Text="، به طور خلاصه تر فایل پشتیبان قبلی به روز رسانی خواهد شد."/></TextBlock>
+        <Button x:Name="btn_loadFile" Content="بارگذاری فایل پشتیبان" HorizontalAlignment="Center" Margin="214,158,203.8,0" VerticalAlignment="Top" Click="btn_loadFile_Click"/>
+        <Label x:Name="lbl_path" FlowDirection="LeftToRight" Content="" HorizontalAlignment="Left" Margin="5,190,0,0" VerticalAlignment="Top" Width="510"/>
+        <Button x:Name="btn_differentialBackup" Content="به روز رسانی فایل پشتیبان" HorizontalAlignment="Center" Margin="198,221,192.8,0" VerticalAlignment="Top" Click="btn_differentialBackup_Click"/>
+        <CheckBox x:Name="chb_agree" Content="متن بالا را مطالعه کرده ام" HorizontalAlignment="Left" Margin="346,225,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>

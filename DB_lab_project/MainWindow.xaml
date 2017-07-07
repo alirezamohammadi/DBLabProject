@@ -17,7 +17,7 @@
             </MenuItem>
             <MenuItem Header="پشتیبان گیری و بازگردانی" Height="32">
                 <MenuItem x:Name="mi_fullBackup" Header="تهیه نسخه پشتیبان از کل داده ها" Click="mi_fullBackup_Click" />
-                <MenuItem x:Name="mi_differentialBackup" Header="به روز رسانی نسخه پشتیبان قبلی" />
+                <MenuItem x:Name="mi_differentialBackup" Header="به روز رسانی نسخه پشتیبان قبلی" Click="mi_differentialBackup_Click" />
                 <MenuItem x:Name="mi_restoreBackup" Header="بازگردانی نسخه پشتیبان" />
             </MenuItem>
             <MenuItem x:Name="mi_about" Header="درباره ما" Height="32"></MenuItem>
