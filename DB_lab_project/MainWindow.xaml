@@ -1,0 +1,26 @@
+﻿<Window x:Class="DB_lab_project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DB_lab_project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel FlowDirection="RightToLeft">
+        <Menu x:Name="navMenu" DockPanel.Dock="Top" Height="32">
+            <MenuItem Header="املاک و مستغلات">
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+            <MenuItem Header="خودرو ها" Height="32">
+                <MenuItem Header="_Manage users" />
+                <MenuItem Header="_Show groups" />
+            </MenuItem>
+            <MenuItem Header="پشتیبان گیری و بازگردانی" Height="32">
+                <MenuItem Header="_Manage users" />
+                <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
+            </MenuItem>
+            <MenuItem Header="درباره ما" Height="32"></MenuItem>
+        </Menu>
+        <Frame x:Name="mainFrame"></Frame>
+    </DockPanel>
+</Window>

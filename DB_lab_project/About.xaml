@@ -1,0 +1,21 @@
+﻿<Page x:Class="DB_lab_project.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DB_lab_project"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="525"
+      Title="About">
+
+    <Grid FlowDirection="RightToLeft">
+        <Label x:Name="label" Content="پروژه آزمایشگاه پایگاه داده" Margin="0,10,205.8,0" Background="Transparent" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="نرم افزار مدیریت خرید و فروش ماشین و املاک و مستغلات" Margin="0,57,189.8,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="استاد راهنما: خانم مهندس سیدی پور" Margin="0,88,298.8,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="برنامه نویس ها:" Margin="0,119,396.8,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="بهار 1396" Margin="232,243,234.8,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="علیرضا محمدی" Margin="0,150,364.8,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="label5_Copy" Content="سحر نفیسی" Margin="0,181,382.8,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
