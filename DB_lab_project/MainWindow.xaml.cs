@@ -57,7 +57,12 @@ namespace DB_lab_project
 
         private void mi_editCustomer_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new EditCustomer());
+            mainFrame.Navigate(new EditCustomer(conn));
+        }
+
+        private void mi_deleteCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new DeleteCustomer());
         }
     }
 }

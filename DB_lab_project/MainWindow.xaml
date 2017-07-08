@@ -14,6 +14,7 @@
             <MenuItem Header="مشتریان">
                 <MenuItem x:Name="mi_addCustomer" Header="افزودن مشتری" Click="mi_addCustomer_Click" />
                 <MenuItem x:Name="mi_editCustomer" Header="ویرایش مشتری" Click="mi_editCustomer_Click" />
+                <MenuItem x:Name="mi_deleteCustomer" Header="حذف مشتری" Click="mi_deleteCustomer_Click" />
             </MenuItem>
             <MenuItem Header="پشتیبان گیری و بازگردانی" Height="32">
                 <MenuItem x:Name="mi_fullBackup" Header="تهیه نسخه پشتیبان از کل داده ها" Click="mi_fullBackup_Click" />

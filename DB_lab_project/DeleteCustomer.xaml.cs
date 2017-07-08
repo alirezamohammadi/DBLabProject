@@ -12,20 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data.SqlClient;
 
 namespace DB_lab_project
 {
-
     /// <summary>
-    /// Interaction logic for EditCustomer.xaml
+    /// Interaction logic for DeleteCustomer.xaml
     /// </summary>
-    public partial class EditCustomer : Page
+    public partial class DeleteCustomer : Page
     {
-        private SqlConnection conn;
-        public EditCustomer(SqlConnection sqlconn)
+        public DeleteCustomer()
         {
-            conn = sqlconn;
             InitializeComponent();
         }
     }

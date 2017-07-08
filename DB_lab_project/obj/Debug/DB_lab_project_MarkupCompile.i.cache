@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\App.xaml
-9-1375880271
+10-1218801054
 
-18639857883
+19954740231
 14-1175798665
-About.xaml;AddCustomer.xaml;AddEstate.xaml;DifferentialBackup.xaml;EditCustomer.xaml;FullBackup.xaml;Login.xaml;MainWindow.xaml;RestoreBackup.xaml;
+About.xaml;AddCustomer.xaml;AddEstate.xaml;DeleteCustomer.xaml;DifferentialBackup.xaml;EditCustomer.xaml;FullBackup.xaml;Login.xaml;MainWindow.xaml;RestoreBackup.xaml;
 
-False
+True
 
