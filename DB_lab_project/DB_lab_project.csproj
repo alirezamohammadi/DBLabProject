@@ -62,6 +62,9 @@
     <Compile Include="AddEstate.xaml.cs">
       <DependentUpon>AddEstate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditCustomer.xaml.cs">
+      <DependentUpon>EditCustomer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="RestoreBackup.xaml.cs">
       <DependentUpon>RestoreBackup.xaml</DependentUpon>
@@ -79,6 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DifferentialBackup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
