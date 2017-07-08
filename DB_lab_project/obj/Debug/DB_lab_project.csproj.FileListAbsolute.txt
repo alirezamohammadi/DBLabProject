@@ -22,3 +22,7 @@ C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\DifferentialBackup.baml
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\FullBackup.baml
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\RestoreBackup.baml
+C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\AddCustomer.g.cs
+C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\AddEstate.g.cs
+C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\AddCustomer.baml
+C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\AddEstate.baml
