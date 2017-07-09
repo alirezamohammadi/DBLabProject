@@ -11,7 +11,7 @@
     <Grid FlowDirection="RightToLeft">
         <Label x:Name="label" Content="شناسه مشتری را که میخواهید حذف کنید را وارد نمایید:" HorizontalAlignment="Left" Margin="66,68,0,0" VerticalAlignment="Top" Width="327"/>
         <TextBox x:Name="txb_editCustID" HorizontalAlignment="Left" Height="23" Margin="360,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
-        <Button x:Name="btn_enterEditedCustomerID" Content="تایید" HorizontalAlignment="Left" Margin="225,107,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_enterEditedCustomerID" Content="تایید" HorizontalAlignment="Left" Margin="225,107,0,0" VerticalAlignment="Top" Width="75" Click="btn_enterEditedCustomerID_Click"/>
 
     </Grid>
 </Page>

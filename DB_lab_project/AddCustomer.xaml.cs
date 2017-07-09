@@ -46,6 +46,7 @@ namespace DB_lab_project
                 txb_custName.Clear();
                 txb_custPhone.Clear();
             }
+            
         }
     }
 }

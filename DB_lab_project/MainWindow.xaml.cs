@@ -62,7 +62,7 @@ namespace DB_lab_project
 
         private void mi_deleteCustomer_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new DeleteCustomer());
+            mainFrame.Navigate(new DeleteCustomer(conn));
         }
     }
 }

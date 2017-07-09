@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace DB_lab_project
 {
@@ -20,9 +21,25 @@ namespace DB_lab_project
     /// </summary>
     public partial class DeleteCustomer : Page
     {
-        public DeleteCustomer()
+        private SqlConnection conn;
+        public DeleteCustomer(SqlConnection sqlconn)
         {
+            conn = sqlconn;
             InitializeComponent();
+        }
+
+        private void btn_enterEditedCustomerID_Click(object sender, RoutedEventArgs e)
+        {
+            bool valid = Functions.Validate(txb_editCustID);
+            if (valid)
+            {
+                SqlCommand deleteCommand = new SqlCommand(
+                    "delete from Moshtari where moshtariID=@custmID;", conn);
+                deleteCommand.Parameters.Add(new SqlParameter("@custmID", txb_editCustID.Text));
+                deleteCommand.ExecuteNonQuery();
+                MessageBox.Show("مشتری با موفقیت حذف شد");
+                txb_editCustID.Clear();
+            }
         }
     }
 }
