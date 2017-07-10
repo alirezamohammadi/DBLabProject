@@ -27,7 +27,7 @@ namespace DB_lab_project
             InitializeComponent();
             navMenu.Visibility = Visibility.Hidden;
             mainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
-            mainFrame.Navigate(new Login(conn,navMenu, mainFrame));
+            mainFrame.Navigate(new Login(conn, navMenu, mainFrame));
         }
 
         private void mi_fullBackup_Click(object sender, RoutedEventArgs e)
@@ -72,7 +72,7 @@ namespace DB_lab_project
 
         private void mi_changePassword_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new ChangePassword());
+            mainFrame.Navigate(new ChangePassword(conn));
         }
     }
 }

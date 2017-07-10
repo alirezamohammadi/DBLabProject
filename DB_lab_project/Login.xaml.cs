@@ -23,7 +23,8 @@ namespace DB_lab_project
     {
         private SqlConnection conn;
         private Menu navMenu;
-        Frame mainFrame;
+        private Frame mainFrame;
+        private string user_name;
         public Login(SqlConnection passedConn, Menu nav, Frame frame)
         {
             conn = passedConn;
@@ -34,14 +35,16 @@ namespace DB_lab_project
 
         private void btn_login_Click(object sender, RoutedEventArgs e)
         {
-            string userName = txb_userName.Text;
+            user_name = txb_userName.Text;
             string password = pwd_password.Password;
             string connectionString = string.Format(@"Server=.\SQLEXPRESS;initial catalog='DB_Lab_Project';
-                User Id={0};Password ={1};", userName, password);
+                User Id={0};Password ={1};", user_name, password);
             conn.ConnectionString = connectionString;
             try
             {
                 conn.Open();
+                Application.Current.Properties["userName"] = user_name;
+
                 navMenu.Visibility = Visibility.Visible;
                 mainFrame.Navigate(new About());
             }

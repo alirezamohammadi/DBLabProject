@@ -50,6 +50,7 @@ namespace DB_lab_project
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("کاربر جدید با موفقیت افزوده شد");
+                    Functions.clearTextBox(txb_confirmPass, txb_newUserName, txb_password);
                 }
                 catch(Exception ex)
                 {
