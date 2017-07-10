@@ -28,5 +28,3 @@ C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\AddEstate.baml
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\EditCustomer.g.cs
 C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\EditCustomer.baml
-C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\DeleteCustomer.g.cs
-C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\DeleteCustomer.baml

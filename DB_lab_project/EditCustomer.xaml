@@ -8,18 +8,19 @@
       d:DesignHeight="300" d:DesignWidth="525"
       Title="EditCustomer">
 
-    <Grid FlowDirection="RightToLeft">
-        <Label x:Name="label" Content="شناسه مشتری را که میخواهید ویرایش کنید را وارد نمایید:" HorizontalAlignment="Left" Margin="78,23,0,0" VerticalAlignment="Top" Width="327"/>
-        <Label x:Name="label1" Content="نام و نام خانوادگی" HorizontalAlignment="Left" Margin="116,155,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Label x:Name="label2" Content="شماره تلفن" HorizontalAlignment="Left" Margin="116,186,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Label x:Name="label3" Content="آدرس" HorizontalAlignment="Left" Margin="116,217,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+    <Grid FlowDirection="RightToLeft" Loaded="Grid_Loaded">
+        <Label x:Name="label" Content="شناسه مشتری را که میخواهید ویرایش یا حذف کنید را وارد نمایید:" HorizontalAlignment="Left" Margin="45,24,0,0" VerticalAlignment="Top" Width="327"/>
+        <Label x:Name="label1" Content="نام و نام خانوادگی" HorizontalAlignment="Left" Margin="116,155,0,0" VerticalAlignment="Top" />
+        <Label x:Name="label2" Content="شماره تلفن" HorizontalAlignment="Left" Margin="116,186,0,0" VerticalAlignment="Top" />
+        <Label x:Name="label3" Content="آدرس" HorizontalAlignment="Left" Margin="116,217,0,0" VerticalAlignment="Top" />
         <TextBox x:Name="txb_editCustID" HorizontalAlignment="Left" Height="23" Margin="372,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="txb_newCustPhone" HorizontalAlignment="Left" Height="23" Margin="225,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
-        <TextBox x:Name="txb_newCustName" HorizontalAlignment="Left" Height="23" Margin="225,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
-        <TextBox x:Name="txb_newCustAddress" HorizontalAlignment="Left" Height="23" Margin="225,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="txb_newCustPhone" HorizontalAlignment="Left" Height="23" Margin="225,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txb_newCustName" HorizontalAlignment="Left" Height="23" Margin="225,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txb_newCustAddress" HorizontalAlignment="Left" Height="23" Margin="225,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <Button x:Name="btn_enterEditedCustomerID" Content="تایید" HorizontalAlignment="Left" Margin="237,62,0,0" VerticalAlignment="Top" Width="75" Click="btn_enterEditedCustomerID_Click"/>
-        <Button x:Name="btn_editCustomer" Content="ویرایش" HorizontalAlignment="Left" Margin="211,255,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
-        <Label x:Name="label4" Content="اطلاعات جدید مشتری را وارد کنید:&#xD;&#xA;" HorizontalAlignment="Left" Margin="78,108,0,0" VerticalAlignment="Top" Height="30" Visibility="Hidden"/>
+        <Button x:Name="btn_editCustomer" Content="ویرایش" HorizontalAlignment="Left" Margin="270,254,0,0" VerticalAlignment="Top" Width="75" Click="btn_editCustomer_Click" />
+        <Label x:Name="label4" Content="اطلاعات جدید مشتری را وارد کنید:&#xD;&#xA;" HorizontalAlignment="Left" Margin="78,108,0,0" VerticalAlignment="Top" Height="30" />
+        <Button x:Name="btn_delete" Content="حذف" HorizontalAlignment="Left" Margin="190,255,0,0" VerticalAlignment="Top" Width="75" Click="btn_delete_Click"/>
 
     </Grid>
 </Page>

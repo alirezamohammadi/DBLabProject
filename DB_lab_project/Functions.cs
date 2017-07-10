@@ -25,5 +25,40 @@ namespace DB_lab_project
             }
             return true;
         }
+        public static void clearTextBox(params TextBox[] textBoxes)
+        {
+            foreach(TextBox textBox in textBoxes)
+            {
+                textBox.Clear();
+            }
+        }
+        public static void hideLabel(params Label[] labels)
+        {
+            foreach(Label label in labels)
+            {
+                label.Visibility = Visibility.Hidden;
+            }
+        }
+        public static void hideTextBox(params TextBox[] textBoxes)
+        {
+            foreach(TextBox textBox in textBoxes)
+            {
+                textBox.Visibility = Visibility.Hidden;
+            }
+        }
+        public static void visibleTextBox(params TextBox[] textBoxes)
+        {
+            foreach(TextBox textBox in textBoxes)
+            {
+                textBox.Visibility = Visibility.Visible;
+            }
+        }
+        public static void visibleLabel(params Label[] labels)
+        {
+            foreach(Label label in labels)
+            {
+                label.Visibility = Visibility.Visible;
+            }
+        }
     }
 }

@@ -39,12 +39,19 @@ namespace DB_lab_project
                 insertCommand.Parameters.Add(new SqlParameter("customerName", txb_custName.Text));
                 insertCommand.Parameters.Add(new SqlParameter("customerPhone", txb_custPhone.Text));
                 insertCommand.Parameters.Add(new SqlParameter("customerAddress", txb_custAddress.Text));
-                insertCommand.ExecuteNonQuery();
-                MessageBox.Show("مشتری با موفقیت ثبت شد");
-                txb_custAddress.Clear();
-                txb_custID.Clear();
-                txb_custName.Clear();
-                txb_custPhone.Clear();
+                try
+                {
+                    insertCommand.ExecuteNonQuery();
+                    MessageBox.Show("مشتری با موفقیت ثبت شد");
+                    txb_custAddress.Clear();
+                    txb_custID.Clear();
+                    txb_custName.Clear();
+                    txb_custPhone.Clear();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("شناسه کاربری وارد شده قبلا ثبت شده است");
+                }
             }
             
         }
