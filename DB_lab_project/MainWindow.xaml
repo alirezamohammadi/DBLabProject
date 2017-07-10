@@ -9,7 +9,7 @@
     <DockPanel FlowDirection="RightToLeft">
         <Menu x:Name="navMenu" DockPanel.Dock="Top" Height="32">
             <MenuItem Header="املاک و مستغلات">
-                <MenuItem Header="افزودن ملک" />
+                <MenuItem x:Name="mi_addEstate" Header="افزودن ملک" Click="mi_addEstate_Click" />
             </MenuItem>
             <MenuItem Header="مشتریان">
                 <MenuItem x:Name="mi_addCustomer" Header="افزودن مشتری" Click="mi_addCustomer_Click" />

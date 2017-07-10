@@ -59,5 +59,10 @@ namespace DB_lab_project
         {
             mainFrame.Navigate(new EditCustomer(conn,mainFrame));
         }
+
+        private void mi_addEstate_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new AddEstate());
+        }
     }
 }

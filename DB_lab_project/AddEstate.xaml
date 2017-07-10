@@ -9,14 +9,26 @@
       Title="AddEstate">
 
     <Grid FlowDirection="RightToLeft">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="252,57,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="252,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="252,113,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label" Content="Label" Margin="179,54,307.8,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="179,85,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="179,116,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_addEstate" Content="Button" HorizontalAlignment="Left" Margin="216,184,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="-42,85,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txb_address" HorizontalAlignment="Left" Height="23" Margin="252,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txb_metraj" HorizontalAlignment="Left" Height="23" Margin="252,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txb_pishPardakht_ejare" HorizontalAlignment="Left" Height="23" Margin="252,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="متراژ" HorizontalAlignment="Left" Margin="120,90,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="مبلغ پیش پرداخت اجاره" HorizontalAlignment="Left" Margin="120,118,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_addEstate" Content="افزودن" HorizontalAlignment="Left" Margin="223,248,0,0" VerticalAlignment="Top" Width="75" Click="btn_addEstate_Click"/>
+        <TextBox x:Name="txb_ejare" HorizontalAlignment="Left" Height="23" Margin="252,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txb_gheymat_har_metr" HorizontalAlignment="Left" Height="23" Margin="252,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txb_tedad_otagh" HorizontalAlignment="Left" Height="23" Margin="252,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy" Content="قیمت هر متر" HorizontalAlignment="Left" Margin="120,174,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy" Content="تعداد اتاق خواب" HorizontalAlignment="Left" Margin="120,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txb_melkID" HorizontalAlignment="Left" Height="23" Margin="252,6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txb_malekID" HorizontalAlignment="Left" Height="23" Margin="252,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy1" Content="شناسه مالک" HorizontalAlignment="Left" Margin="120,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="شناسه ملک" HorizontalAlignment="Left" Margin="120,6,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy2" Content="آدرس" HorizontalAlignment="Left" Margin="120,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy3" Content="اجاره ماهیانه" HorizontalAlignment="Left" Margin="122,149,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace DB_lab_project
 {
@@ -20,9 +21,18 @@ namespace DB_lab_project
     /// </summary>
     public partial class AddEstate : Page
     {
-        public AddEstate()
+        private SqlConnection conn;
+        public AddEstate(SqlConnection sqlConn)
         {
+            conn = sqlConn;
             InitializeComponent();
+        }
+
+        
+
+        private void btn_addEstate_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
