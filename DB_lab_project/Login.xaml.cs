@@ -25,6 +25,7 @@ namespace DB_lab_project
         private Menu navMenu;
         private Frame mainFrame;
         private string user_name;
+
         public Login(SqlConnection passedConn, Menu nav, Frame frame)
         {
             conn = passedConn;
@@ -43,8 +44,6 @@ namespace DB_lab_project
             try
             {
                 conn.Open();
-                Application.Current.Properties["userName"] = user_name;
-
                 navMenu.Visibility = Visibility.Visible;
                 mainFrame.Navigate(new About());
             }

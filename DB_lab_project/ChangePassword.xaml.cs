@@ -25,7 +25,6 @@ namespace DB_lab_project
         public ChangePassword(SqlConnection sqlConn)
         {
             conn = sqlConn;
-            label3.Content = Application.Current.Properties["userName"];
             InitializeComponent();
         }
 
@@ -58,7 +57,7 @@ namespace DB_lab_project
                 "sp_password @curr_pass, @new_pass, @user_name", conn);
             cmd.Parameters.Add(new SqlParameter("curr_pass", txb_currPass.Text));
             cmd.Parameters.Add(new SqlParameter("new_pass", psw_newPass.Password));
-            cmd.Parameters.Add(new SqlParameter("user_name", Application.Current.Properties["userName"]));
+            cmd.Parameters.Add(new SqlParameter("user_name", txb_userName.Text));
             try
             {
                 cmd.ExecuteNonQuery();
