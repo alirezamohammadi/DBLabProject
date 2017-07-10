@@ -62,7 +62,12 @@ namespace DB_lab_project
 
         private void mi_addEstate_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new AddEstate());
+            mainFrame.Navigate(new AddEstate(conn));
+        }
+
+        private void mi_addUser_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new AddUser());
         }
     }
 }

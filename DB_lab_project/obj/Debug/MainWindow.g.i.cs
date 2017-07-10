@@ -97,6 +97,14 @@ namespace DB_lab_project {
         #line hidden
         
         
+        #line 24 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem mi_addUser;
+        
+        #line default
+        #line hidden
+        
+        
         #line 27 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.MenuItem mi_about;
@@ -200,6 +208,15 @@ namespace DB_lab_project {
             #line hidden
             return;
             case 8:
+            this.mi_addUser = ((System.Windows.Controls.MenuItem)(target));
+            
+            #line 24 "..\..\MainWindow.xaml"
+            this.mi_addUser.Click += new System.Windows.RoutedEventHandler(this.mi_addUser_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 9:
             this.mi_about = ((System.Windows.Controls.MenuItem)(target));
             
             #line 27 "..\..\MainWindow.xaml"
@@ -208,7 +225,7 @@ namespace DB_lab_project {
             #line default
             #line hidden
             return;
-            case 9:
+            case 10:
             this.mainFrame = ((System.Windows.Controls.Frame)(target));
             return;
             }
