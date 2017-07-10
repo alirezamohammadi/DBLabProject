@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DB_lab_project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="700">
     <DockPanel FlowDirection="RightToLeft">
         <Menu x:Name="navMenu" DockPanel.Dock="Top" Height="32">
             <MenuItem Header="املاک و مستغلات">
@@ -25,6 +25,8 @@
                 <MenuItem x:Name="mi_changePassword" Header="تغییر کلمه عبور" Click="mi_changePassword_Click" />
             </MenuItem>
             <MenuItem x:Name="mi_about" Header="درباره ما" Height="32" Click="mi_about_Click"></MenuItem>
+            <MenuItem x:Name="mi_logout" Header="خروج از حساب" Height="32" Click="mi_about_Click"></MenuItem>
+            <MenuItem x:Name="mi_date" FlowDirection="LeftToRight" Header="" Height="32" Click="mi_about_Click" Width="169"></MenuItem>
         </Menu>
         <Frame x:Name="mainFrame"></Frame>
     </DockPanel>

@@ -24,7 +24,9 @@ namespace DB_lab_project
         private SqlConnection conn = new SqlConnection();
         public MainWindow()
         {
+            Cultures.InitializePersianCulture();
             InitializeComponent();
+            mi_date.Header = DateTime.Now.ToString();
             navMenu.Visibility = Visibility.Hidden;
             mainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
             mainFrame.Navigate(new Login(conn, navMenu, mainFrame));
