@@ -67,7 +67,12 @@ namespace DB_lab_project
 
         private void mi_addUser_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Navigate(new AddUser());
+            mainFrame.Navigate(new AddUser(conn));
+        }
+
+        private void mi_changePassword_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new ChangePassword());
         }
     }
 }

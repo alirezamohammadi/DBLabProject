@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\obj\Debug\
+C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\
 DB_lab_project
 none
 false
 DEBUG;TRACE
-C:\Users\Alireza Mohammadi\Documents\Visual Studio 2015\Projects\DB_lab_project\DB_lab_project\App.xaml
-9-1375880271
+C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\App.xaml
+11-2051436258
 
-14-811576488
+161825330247
 14-1175798665
-About.xaml;AddCustomer.xaml;AddEstate.xaml;DifferentialBackup.xaml;EditCustomer.xaml;FullBackup.xaml;Login.xaml;MainWindow.xaml;RestoreBackup.xaml;
+About.xaml;AddCustomer.xaml;AddEstate.xaml;AddUser.xaml;ChangePassword.xaml;DifferentialBackup.xaml;EditCustomer.xaml;FullBackup.xaml;Login.xaml;MainWindow.xaml;RestoreBackup.xaml;
 
-True
+False
 
