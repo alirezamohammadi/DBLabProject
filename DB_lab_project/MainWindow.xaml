@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DB_lab_project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="700">
+        Title="MainWindow" Height="350" Width="700" Closing="Window_Closing">
     <DockPanel FlowDirection="RightToLeft">
         <Menu x:Name="navMenu" DockPanel.Dock="Top" Height="32">
             <MenuItem Header="املاک و مستغلات">
@@ -14,6 +14,7 @@
             <MenuItem Header="مشتریان">
                 <MenuItem x:Name="mi_addCustomer" Header="افزودن مشتری" Click="mi_addCustomer_Click" />
                 <MenuItem x:Name="mi_editDeleteCustomer" Header="ویرایش یا حذف مشتری" Click="mi_editDeleteCustomer_Click" />
+                <MenuItem x:Name="mi_showCustomers" Header="نمایش لیست مشتریان" Click="mi_showCustomers_Click" />
             </MenuItem>
             <MenuItem Header="پشتیبان گیری و بازگردانی" Height="32">
                 <MenuItem x:Name="mi_fullBackup" Header="تهیه نسخه پشتیبان از کل داده ها" Click="mi_fullBackup_Click" />
@@ -25,8 +26,8 @@
                 <MenuItem x:Name="mi_changePassword" Header="تغییر کلمه عبور" Click="mi_changePassword_Click" />
             </MenuItem>
             <MenuItem x:Name="mi_about" Header="درباره ما" Height="32" Click="mi_about_Click"></MenuItem>
-            <MenuItem x:Name="mi_logout" Header="خروج از حساب" Height="32" Click="mi_about_Click"></MenuItem>
-            <MenuItem x:Name="mi_date" FlowDirection="LeftToRight" Header="" Height="32" Click="mi_about_Click" Width="169"></MenuItem>
+            <MenuItem x:Name="mi_logout" Header="خروج از حساب" Height="32" Click="mi_logout_Click"/>
+            <MenuItem x:Name="mi_date" FlowDirection="LeftToRight" Header="" Height="32" Width="169"></MenuItem>
         </Menu>
         <Frame x:Name="mainFrame"></Frame>
     </DockPanel>

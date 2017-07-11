@@ -50,7 +50,7 @@ namespace DB_lab_project
         {
             try
             {
-                string cmdStr = string.Format("BACKUP DATABASE DB_lab_project TO DISK = '{0}'", path);
+                string cmdStr = string.Format("exec FullBackup '{0}'", path);
                 cmd = new SqlCommand(cmdStr, conn);
                 cmd.ExecuteNonQuery();
                 System.Windows.MessageBox.Show("پشتیبان با موفقیت ایجاد شد");

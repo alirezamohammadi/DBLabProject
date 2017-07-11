@@ -32,3 +32,5 @@ C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\DB_lab_
 C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\DB_lab_project.csproj.GenerateResource.Cache
 C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\DB_lab_project.exe
 C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\DB_lab_project.pdb
+C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\ShowCustomers.g.cs
+C:\Users\Alireza Mohammadi\Desktop\DBLabProject\DB_lab_project\obj\Debug\ShowCustomers.baml

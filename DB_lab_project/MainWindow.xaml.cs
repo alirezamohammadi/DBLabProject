@@ -76,5 +76,30 @@ namespace DB_lab_project
         {
             mainFrame.Navigate(new ChangePassword(conn));
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("آیا مطمئن هستید می خواهید خارج شوید؟", "خروج", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes)
+            {
+                conn.Close();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void mi_logout_Click(object sender, RoutedEventArgs e)
+        {
+            conn.Close();
+            navMenu.Visibility = Visibility.Hidden;
+            mainFrame.Navigate(new Login(conn, navMenu, mainFrame));
+        }
+
+        private void mi_showCustomers_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new ShowCustomers(conn));
+        }
     }
 }
